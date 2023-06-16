@@ -4,7 +4,7 @@ import joblib
 
 st.set_page_config(page_title="ROMA")
 
-def get_predicted(covid_params):
+def get_predicted(RA_Anti-CCP):
     with open("model_randomforestforRA.sav" , 'rb') as f:
         model_n = joblib.load(f)
     return model_n.predict(RA_Anti-CCP)
