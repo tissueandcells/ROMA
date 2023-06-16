@@ -9,7 +9,7 @@ Original file is located at
 
 import streamlit as st
 import pickle
-import joblib
+
 
 st.set_page_config(page_title="ROMA")
 
