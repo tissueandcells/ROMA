@@ -7,9 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1JU1dsQ85W_tIQ5IZWFhv1p8FB2OYX71H
 """
 
-import streamlit as st
-import pickle
-import joblib
 
 st.set_page_config(page_title="ROMA")
 
