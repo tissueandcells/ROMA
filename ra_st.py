@@ -7,7 +7,7 @@ st.set_page_config(page_title="ROMA")
 def get_predicted(covid_params):
     with open("model_randomforestforRA.sav" , 'rb') as f:
         model_n = joblib.load(f)
-    return model_n.predict(RA_parametres)
+    return model_n.predict(RA_Anti-CCP)
 
 
 st.title("Anti-CCP Prediction in Rheumatoid Arthritis patients")
