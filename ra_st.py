@@ -9,7 +9,7 @@ Original file is located at
 
 import streamlit as st
 import pickle
-
+import joblib
 
 st.set_page_config(page_title="ROMA")
 
@@ -32,10 +32,22 @@ with form:
     txt_crp = cols[0].text_input("CRP")
     txt_rf= cols[0].text_input("RF")
     txt_sedim = cols[0].text_input("Sedim")
+    txt_wbc = cols[0].text_input("WBC")
     txt_hgb = cols[0].text_input("HGB")
     txt_hct = cols[0].text_input("HCT")
     txt_mcv = cols[0].text_input("MCV")
-    txt_rdv = cols[0].text_input("RDW-CV")
+    txt_rdv = cols[0].text_input("PLT")
+    txt_plt = cols[0].text_input("RDW-CV")
+    txt_Lymphocyte = cols[0].text_input("Lymphocyte")
+    txt_Creatine = cols[0].text_input("Creatine")
+    txt_alt = cols[0].text_input("ALT")
+    txt_ast = cols[0].text_input("RDW-CV")
+    txt_uric_acide = cols[0].text_input("Uric Acide")
+    txt_ca = cols[0].text_input("Ca")
+    txt_mg = cols[0].text_input("Mg")
+    
+    
+
 
 
 
@@ -46,7 +58,8 @@ with form:
 
 if submitted:
     result = get_predicted([[float(txt_gender), float(txt_age), float(txt_crp),
-                              float(txt_rf), float(txt_sedim), float(txt_hgb), float(txt_hct), float(txt_mcv), float(txt_rdv)]])
+                              float(txt_rf), float(txt_sedim), float(txt_hgb), float(txt_hct), float(txt_mcv), float(txt_rdv), float(txt_plt), float(txt_Lymphocyte), float(txt_Creatine),
+                            float(txt_alt), float(txt_ast), float(txt_uric_acide), float(txt_ca), float(txt_mg)]])
 
     # st.success(result)
 
